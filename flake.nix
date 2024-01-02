@@ -21,7 +21,7 @@
       stdenv.mkDerivation {
         name = "libopencm3";
         buildInputs = with pkgs; [
-          gcc-arm-embedded python patch
+          gcc-arm-embedded python
         ];
         src = self;
         inherit libopencm3; # Source
