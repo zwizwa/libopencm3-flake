@@ -21,7 +21,7 @@ cd libopencm3
 # produces a stray backshlash at the end.  Patch was generated like this:
 #   diff -Naur $libopencm3/Makefile libopencm3/Makefile >fix_SRCLIBDIR.patch
 patch -p1 <$src/fix_SRCLIBDIR.patch
-make PREFIX=arm-none-eabi- TARGETS=stm32/f1 V=1
+make -j${NIX_BUILD_CORES} PREFIX=arm-none-eabi- TARGETS=stm32/f1 V=1
 
 # Copy only what uc_tools code needs.
 mkdir -p $out/lib/dispatch ;

@@ -24,10 +24,9 @@
           gcc-arm-embedded python patch
         ];
         src = self;
-        inherit libopencm3;
+        inherit libopencm3; # Source
         builder = ./builder.sh;
         enableParallelBuilding = true;
-        dontPatchShebangs = true;
       };
   };
 }
