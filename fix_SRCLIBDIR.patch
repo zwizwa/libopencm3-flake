@@ -1,0 +1,11 @@
+--- /nix/store/1x7l0assglrqlc5cwhplss1ji03134qj-source/Makefile	1970-01-01 00:00:01.000000000 +0000
++++ libopencm3/Makefile	2024-01-02 15:30:42.952992019 +0000
+@@ -24,7 +24,7 @@
+ 
+ space:=
+ space+=
+-SRCLIBDIR:= $(subst $(space),\$(space),$(realpath lib))
++SRCLIBDIR:= $(realpath lib)
+ 
+ TARGETS ?=	stm32/f0 stm32/f1 stm32/f2 stm32/f3 stm32/f4 stm32/f7 \
+ 		stm32/l0 stm32/l1 stm32/l4 \

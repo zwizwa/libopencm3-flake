@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "libopencm3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562427529,
+        "narHash": "sha256-kTwHABaDAXO57pFlPK33erJZUPUV6aUy4XHhFCxTUOw=",
+        "owner": "zwizwa",
+        "repo": "libopencm3",
+        "rev": "3eff201a4bb3759a9c967a6f5e3fd0aad46dc5af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zwizwa",
+        "repo": "libopencm3",
+        "rev": "3eff201a4bb3759a9c967a6f5e3fd0aad46dc5af",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1637848014,
+        "narHash": "sha256-AeeGWjRMyuinBM0uK2c4jvqDNObCsDOpe3D7Cex+Goc=",
+        "owner": "zwizwa",
+        "repo": "nixpkgs",
+        "rev": "1e0f0b95471f56e56b2b57541ac639ff6209cc4f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zwizwa",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "libopencm3": "libopencm3",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
